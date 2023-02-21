@@ -19,5 +19,5 @@ db.once('open', () => console.log('Database Connected...' ));
 app.use(cors());
 app.use(express.json());
 app.use(UserRoute);
-const PORT = process.env.PORT || 5000;
-app.listen(PORT, ()=> console.log('Server up and running...'));
+const PORT = process.env.PORT || 3030;
+app.listen(5000, ()=> console.log('Server up and running...'));
