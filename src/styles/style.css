@@ -1,0 +1,375 @@
+﻿* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.App {
+    background-color: #1d3557;
+    font-family: Cascade Mono;
+    background-image: url('../images/markus-spiske-GXBF7vaC6L8-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    max-width: 100vw;
+    /* overflow: hidden; */
+}
+
+.dark {
+    background-color: #1d3557 !important;
+    color: #a8dadc !important;
+}
+
+.light {
+    background-color: #f1faee !important;
+    color: #e63946 !important;
+}
+
+.nav-link {
+    color: #f1faee !important;
+    display: inline-block;
+    position: relative;
+}
+
+.conIcons {
+    /* border: 2px solid #a8dadc;
+    border-radius: 50px; */
+    font-size: 25px;
+    width: 50px;
+    height: 50px;
+    float: left;
+    background-color: #457b9d;
+    color: #a8dadc;
+}
+
+.nav-link::after {
+    /* background: none repeat scroll 0 0 transparent; */
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #f1faee;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.nav-link:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+.conLine::after {
+    display: inline-block;
+    margin: 1 0px;
+    content: "";
+    height: 1px;
+    width: 125px;
+    border: 1px solid #e63946;
+}
+
+#contact {
+    width: 80%;
+    height: 87.5vh;
+    background-color: #1d3557;
+    border-radius: 1.5rem;
+    opacity: .75;
+}
+
+.btnlink {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    font-size: 12px !important;
+
+}
+
+#nav {
+    height: 7.5vh;
+    background-color: transparent;
+}
+
+.card {
+    color: #f1faee !important;
+    background-color: #457b9d !important;
+}
+
+.card:hover {
+    box-shadow: 0 0 25px #e63946;
+    transform: translateY(-20px);
+    transition: all 500ms ease-in-out;
+}
+
+.change {
+    width: 100%;
+}
+
+#spec {
+    font-size: 40px;
+}
+
+#picMe {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+.mainFrame {
+    height: 87.5vh;
+}
+
+.quickness {
+    display: flex;
+}
+
+.quickLinks {
+    color: #f1faee;
+    background-color: #457b9d;
+    border: 1px solid #457b9d;
+    margin: 2px;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+}
+
+.quickLinks:hover {
+    color: #e63946;
+    background-color: #a8dadc;
+    transition: all 500ms;
+}
+
+.aLink {
+    text-decoration: none;
+
+}
+
+
+#res {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+#footer {
+    height: 5vh;
+}
+
+
+#resume {
+    background-color: #1d3557;
+    opacity: .8;
+    border-radius: 1rem;
+    padding: 10px;
+}
+
+.progress-bar {
+    background-color: #e63946 !important;
+}
+
+.progress {
+    height: 25px !important;
+    font-size: 20px !important;
+    border-radius: 50px !important;
+}
+
+.spec.card {
+    width: 500px;
+    height: 350px;
+    text-align: center;
+    transform: none;
+    box-shadow: none;
+}
+
+.card-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.btnIcon {
+    width: 50px;
+    height: 50px;
+    border-radius: 99px;
+    font-size: 25px;
+    border: 1px solid #f1faee;
+    color: #f1faee;
+    background-color: #457b9d;
+    margin: 5px 10px;
+}
+
+.btnIcon:focus {
+    color: #e63946;
+    border: 1px solid #e63946;
+    background-color: #a8dadc;
+}
+
+#blinker {
+    animation: blinker 2s linear infinite;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+#softSk {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.badge.bg-primary {
+    margin: 5px;
+    font-size: 20px !important;
+    padding: 5px;
+    background-color: #457b9d !important;
+    border: 1px solid #f1faee;
+}
+
+.stock {
+    width: 300px;
+    height: 200px;
+}
+
+.projCont {
+    width: 300px;
+    height: auto;
+    border: 2px solid #e63946;
+    border-radius: 6px;
+    background-color: #333;
+    color: #e63946;
+}
+
+.content-text {
+    margin: 10px 0;
+}
+
+.content-links {
+    margin: 0 10px;
+    color: #e63946;
+    width: 50px !important;
+    height: 50px !important;
+}
+
+.content-links:hover {
+    color: #457b9d;
+}
+
+#projects {
+    border-radius: 1rem;
+    background-color: #1d3557;
+    width: 90vw;
+    margin: auto;
+}
+
+.projImage{
+    width: 300px;
+    height: 200px;
+}
+
+
+.formStuff {
+    width: 400px !important;
+}
+
+.hide {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
+input {
+    border: none;
+    border-bottom: 2px solid #a8dadc;
+    background-color: #333;
+    color: #a8dadc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+input:focus {
+    background-color: #f1faee;
+    color: #333;
+}
+
+input::placeholder {
+    color: #a8dadc;
+}
+
+textarea::placeholder {
+    color: #a8dadc;
+}
+
+textarea {
+    border: 2px solid #a8dadc;
+    background-color: #333;
+    border-radius: 4px;
+    resize: none !important;
+    width: 80%;
+    height: 200px;
+}
+
+textarea:focus {
+    background-color: #f1faee;
+    color: #333;
+}
+
+.invalid {
+    border: none;
+    border-bottom: 2px solid #e63946;
+}
+
+#contactBtn {
+    border: 2px solid #a8dadc;
+    color: #a8dadc;
+    background-color: #333;
+    border-radius: 4px;
+}
+
+.hiddentProjects {
+    border: 2px solid #e63946;
+    height: fit-content;
+    text-align: center;
+}
+
+@media(max-width:768px) {
+
+    .App {
+        background-image: none !important;
+        width: 100%;
+        overflow-x: hidden !important;
+        height: 100%;
+        background-color: #e63946;
+    }
+
+    .spec.card {
+        height: auto;
+    }
+
+    .mainFrame {
+        height: auto;
+    }
+
+    .nav {
+        height: 12vh !important;
+    }
+
+    #spec {
+        font-size: 24px;
+    }
+
+    #contact {
+        height: auto;
+    }
+}
