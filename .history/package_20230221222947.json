@@ -1,0 +1,23 @@
+{
+  "name": "starter-portfolio",
+  "version": "1.0.0",
+  "description": "starter portfolio",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently \"cd server && npm run dev\" \"cd client && npm start\" "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devkthines/finalTry.git"
+  },
+  "author": "korey-hines",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devkthines/finalTry/issues"
+  },
+  "homepage": "https://github.com/devkthines/finalTry#readme",
+  "devDependencies": {
+    "concurrently": "^7.6.0",
+    "nodemon": "^2.0.20"
+  }
+}
